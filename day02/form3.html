@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+    td{
+        background: cornsilk;
+        color: seagreen;
+        font-weight: bold;
+        font-family: 궁서;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        <table border="1">
+            <tr>
+                <td> 아이디 </td>
+                <td> <input type="text" name="id"> </td>
+            </tr>
+            <tr>
+                <td> 패스워드 </td>
+                <td> <input type="password" name="pw"> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" style="background: lime;">
+                    <input type="submit" value="서버로 전송" style="background: red; color:green; ">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <form action="member">
+        <h3>회원가입 화면</h3>
+        <table border="1">
+            <tr>
+                <td> 가입할 id </td>
+                <td colspan="3"> <input type="text" name="id"> </td>
+            </tr>
+            <tr>
+                <td> 가입할 pw </td>
+                <td colspan="3"> <input type="password" name="pw"> </td>
+            </tr>
+            <tr>
+                <td> 가입할 이름 </td>
+                <td colspan="3"> <input type="text" name="name" placeholder="이름 성 순서대로"> </td>
+            </tr>
+            <tr>
+                <td> 성별 </td>
+                <td> <input type="radio" name="gender" value="man" checked>남자 </td>
+                <td colspan="2"> <input type="radio" name="gender" value="woman"> 여자 </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td><input type="checkbox" name="hobby" value="run" checked> 달리기</td>
+                <td><input type="checkbox" name="hobby" value="youtube"> 동영상보기</td>
+                <td><input type="checkbox" name="hobby" value="internet"> 인터넷서핑</td>
+            </tr>
+            <tr>
+                <td>전화번호 통신사</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
