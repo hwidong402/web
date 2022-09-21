@@ -1,0 +1,48 @@
+table{
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+input{
+    color: red;
+    text-align: center;
+}
+
+#tr {
+    background: rgb(72, 248, 95);
+    font-weight: bold;
+    color: black;
+}
+
+.td{
+    background: whitesmoke;
+    color: blue;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.td2{
+    background: yellow;
+}
+
+#lasttd{
+    background: yellow;
+}
+
+.text{
+    background: pink;
+    border: groove;
+}
+
+#submit{
+    /* font-weight: bold; */
+    font-size: 15px;
+    padding: 5px;
+    background: whitesmoke;
+    color: green;
+    border: outset;
+}
+
+input:hover{
+    background: black;
+}

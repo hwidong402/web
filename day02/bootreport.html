@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            width: 960px;
+            margin: 0 auto;
+            background: #F6F6F6;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        <table border="1" class="table table-dark table-hover">
+            <tr>
+                <td> 아이디 </td>
+                <td> <input type="text" name="id" class="form-control"> </td>
+            </tr>
+            <tr>
+                <td> 패스워드 </td>
+                <td> <input type="password" name="pw" class="form-control"> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="서버로 전송" class="btn btn-success">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <form action="member">
+        <h3>회원가입 화면</h3>
+        <table border="1" class="table table-dark table-striped">
+            <tr>
+                <td> 가입할 id </td>
+                <td colspan="3"> <input type="text" name="id" class="form-control"> </td>
+            </tr>
+            <tr>
+                <td> 가입할 pw </td>
+                <td colspan="3"> <input type="password" name="pw" class="form-control"> </td>
+            </tr>
+            <tr>
+                <td> 가입할 이름 </td>
+                <td colspan="3"> <input type="text" name="name" placeholder="이름 성" class="form-control"> </td>
+            </tr>
+            <tr>
+                <td> 성별 </td>
+                <td> <input type="radio" name="gender" value="man" checked class="form-check-input">남자 </td>
+                <td colspan="2"> <input type="radio" name="gender" value="woman" class="form-check-input"> 여자 </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td><input type="checkbox" name="hobby" value="run" checked class="form-check-input"> 달리기</td>
+                <td><input type="checkbox" name="hobby" value="youtube" class="form-check-input"> 동영상보기</td>
+                <td><input type="checkbox" name="hobby" value="internet" class="form-check-input"> 인터넷서핑</td>
+            </tr>
+            <tr>
+                <td>전화번호 통신사</td>
+                <td><select name="tel" class="form-control">
+                        <option value="sktelecom">SKT</option>
+                        <option value="etctele" selected>알뜰폰</option>
+                        <option value="lgtelecom">LGT</option>
+                        <option value="ktelecom">KT</option>
+                    </select>
+                </td>
+                <td colspan="2">
+                    <input type="number" name="number" placeholder="ex)01012345678" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    생년원일
+                </td>
+                <td colspan="3">
+                    <input type="date" class="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    가입한 시기
+                </td>
+                <td colspan="3">
+                    <input type="datetime-local" class="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    가입한 주
+                </td>
+                <td colspan="3">
+                    <input type="week" name="week" class="date2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    하고 싶은 말
+                </td>
+                <td colspan="3">
+                    <textarea name="word" cols="30" rows="10" placeholder="100글자 이내로 써주세요."
+                        class="form-control"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="4"> <input type="submit" value="회원가입" class="btn btn-success"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
