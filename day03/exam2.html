@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 960px;
+        }
+    </style>
+    <script>
+        function check() {
+            user = document.getElementById('user').value
+            
+            if (user.length >= 5 ) {
+                result = "5글자 이상입니다!!"
+            } else {
+                result = "5글자 이하입니다."
+            }
+            d2.innerHTML = result
+        }
+
+        function pwcheck() {
+            pw = document.getElementById('pw').value
+            pw2 = document.getElementById('pw2').value
+
+            if (pw == pw2) {
+                result = '일치 합니다! <img src="ok.png" width=250 hegit=100>'
+            } else {
+                result = '일치하지 않습니다. <img src="no.gif" width=250 hegit=100>'
+            }
+            d3.innerHTML = result
+        }
+    </script>
+
+</head>
+<body>
+    <div id="d1" style="background: yellow;">
+        <h3>자바 스크립트 테스트</h3>
+        <hr>
+        아이디 : <input type="text" id="user">
+        <button onclick="check()" style="color: blue; background:pink; width:100px; height:20px;">글자수 체크</button> <br>
+        패스워드 : <input type="text" id="pw"> <br>
+        패스워드2 : <input type="text" id="pw2">
+        <button onclick="pwcheck()" style="color: white; background:lime; width:100px; height:20px;">패스워드 동일</button>
+        <hr>
+        <div id="d2" style="background: gray;">
+            
+        </div>
+        <div id="d3" style="background: lime;">
+            
+        </div>
+    </div>
+</body>
+</html>
